@@ -1,3 +1,13 @@
+
+import os
+
+# Set Streamlit server port from the environment variable or default to 8501
+os.environ["STREAMLIT_SERVER_PORT"] = os.getenv("PORT", "8501")
+
+# Set Streamlit server address to 0.0.0.0 for external access
+os.environ["STREAMLIT_SERVER_ADDRESS"] = "0.0.0.0"
+
+
 import streamlit as st
 from rdkit import Chem
 from rdkit.Chem import Draw, rdMolDraw2D
