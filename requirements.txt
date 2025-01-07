@@ -1,0 +1,8 @@
+rdkit-pypi==2022.9.5
+streamlit
+deepchem==2.7.1
+pandas
+numpy
+joblib
+matplotlib
+py3Dmol
